@@ -1,2 +1,3 @@
-# load-and-view-pdf-files-from-sharepoint-in-xamarin
-Example application to load and view PDF files from SharePoint using Syncfusion Xamarin.Forms PDF Viewer.
+# Load and View PDF files from SharePoint in Xamarin
+
+This repository contains the example which demonstrates how to access PDF files from the SharePoint and load them using Syncfusion Xamarin.Forms PDF Viewer.

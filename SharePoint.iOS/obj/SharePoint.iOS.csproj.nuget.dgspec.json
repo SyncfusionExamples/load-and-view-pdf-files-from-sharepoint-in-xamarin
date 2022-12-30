@@ -1,0 +1,176 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint.iOS\\SharePoint.iOS.csproj": {}
+  },
+  "projects": {
+    "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint.iOS\\SharePoint.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint.iOS\\SharePoint.iOS.csproj",
+        "projectName": "PdfViewerAuth.iOS",
+        "projectPath": "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint.iOS\\SharePoint.iOS.csproj",
+        "packagesPath": "C:\\Users\\RamkumarR\\.nuget\\packages\\",
+        "outputPath": "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RamkumarR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Samples\\Maui-Nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.syncfusion.com/repository/nuget-hosted/": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint\\SharePoint.csproj": {
+                "projectPath": "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint\\SharePoint.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "PnP.Framework": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "Syncfusion.Xamarin.SfPdfViewer": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfProgressBar": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfTreeView": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint\\SharePoint.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint\\SharePoint.csproj",
+        "projectName": "SharePoint",
+        "projectPath": "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint\\SharePoint.csproj",
+        "packagesPath": "C:\\Users\\RamkumarR\\.nuget\\packages\\",
+        "outputPath": "D:\\Blog Examples\\Xamarin\\load-and-view-pdf-files-from-sharepoint-in-xamarin\\SharePoint\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RamkumarR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "D:\\Samples\\Maui-Nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.syncfusion.com/repository/nuget-hosted/": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "PnP.Framework": {
+              "target": "Package",
+              "version": "[1.10.0, )"
+            },
+            "Syncfusion.Xamarin.SfPdfViewer": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfProgressBar": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfTreeView": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2012, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

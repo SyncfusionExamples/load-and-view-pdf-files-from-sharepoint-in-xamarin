@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:treeView="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
+             xmlns:local="clr-namespace:SharePoint"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="SharePoint.DocumentsPage">
+
+    <ContentPage.BindingContext>
+        <local:SharePointViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ItemTemplateSelector x:Key="ItemTemplateSelector" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <progressBar:SfLinearProgressBar x:Name="ProgressBar" Grid.Row="0" HeightRequest="5" IsIndeterminate="True" IsVisible="false" ProgressColor="#038387"/>
+            <StackLayout Grid.Row="1" Orientation="Vertical" VerticalOptions="Center">
+                <Image x:Name="SharepointImage" HeightRequest="175" WidthRequest="175" VerticalOptions="Center"></Image>
+                <Button Text="SHAREPOINT  LOGIN" x:Name="LoginButton" WidthRequest="250"
+                    HorizontalOptions="Center"
+                    Font="18"
+                    Clicked="LoginButton_Clicked"/>
+                <Label x:Name="DocumentsTitleLabel" HeightRequest="50" IsVisible="false" Text="Documents" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" TextColor="White" BackgroundColor="#038387"/>
+                <treeView:SfTreeView x:Name="DocumentsView" ItemHeight="40"
+                                     IsVisible="false"
+                                     ChildPropertyName="SubFiles"
+                                     LoadOnDemandCommand="{Binding DocumentsViewOnDemandCommand}"
+                                     ItemTemplateContextType="Node"
+                                     ItemTapped="DocumentsView_ItemTapped"
+                                     SelectionBackgroundColor="#038387"
+                                     SelectionForegroundColor="White"
+                                     Indentation="20" 
+                                     ExpanderWidth="40" ItemTemplate="{StaticResource ItemTemplateSelector}">
+                </treeView:SfTreeView>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

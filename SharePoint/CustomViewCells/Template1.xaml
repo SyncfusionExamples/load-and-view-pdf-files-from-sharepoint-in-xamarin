@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SharePoint.Template1">
+    <ViewCell.View>
+        <Grid x:Name="grid" RowSpacing="0" BackgroundColor="Transparent">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="1" />
+            </Grid.RowDefinitions>
+            <Grid RowSpacing="0" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="40" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <Grid Padding="5,5,5,5">
+                    <Image
+                                               Source="{Binding Content.ImageIcon}"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Center"
+                                               HeightRequest="35" 
+                                               WidthRequest="35"/>
+                </Grid>
+                <Grid Grid.Column="1"
+                                              RowSpacing="1"
+                                              Padding="1,0,0,0"
+                                              VerticalOptions="Center">
+                    <Label LineBreakMode="NoWrap"
+                                                   Text="{Binding Content.ItemName}"
+                                                   VerticalTextAlignment="Center">
+                        <Label.FontSize>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On  Platform="Android,iOS">
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="16" Tablet="18" />
+                                </On>
+                                <On  Platform="UWP">
+                                    <OnIdiom x:TypeArguments="x:Double" Phone="18" Tablet="20" Desktop="20" />
+                                </On>
+                            </OnPlatform>
+                        </Label.FontSize>
+                    </Label>
+                </Grid>
+                <!--<Grid Grid.Column="2"
+                                              RowSpacing="1"
+                                              Padding=".1,.1,.1,.1"
+                                              VerticalOptions="Center">
+                    <Label LineBreakMode="NoWrap"
+                                                   Text="{Binding ., Converter={StaticResource FileCountConverter}}"
+                                                   VerticalTextAlignment="Center"
+                                                   HorizontalTextAlignment="Center"
+                                                   FontSize="{OnPlatform Android={OnIdiom Phone=14, Tablet=16},iOS={OnIdiom Phone=14,Tablet=16},UWP={OnIdiom Phone=16,Tablet=18,Desktop=18}}"/>
+                </Grid>-->
+            </Grid>
+            <StackLayout Grid.Row="1" HeightRequest="1"/>
+        </Grid>
+    </ViewCell.View>
+</ViewCell>

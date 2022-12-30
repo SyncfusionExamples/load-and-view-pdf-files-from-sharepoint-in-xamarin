@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ISave.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\back.png" />
+    <None Remove="Icons\sharepoint.png" />
+    <None Remove="Icons\treeview_folder.png" />
+    <None Remove="Icons\treeview_pdf.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Icons\back.png" />
+    <EmbeddedResource Include="Icons\sharepoint.png" />
+    <EmbeddedResource Include="Icons\treeview_folder.png" />
+    <EmbeddedResource Include="Icons\treeview_pdf.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PnP.Framework" Version="1.10.0" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPdfViewer" Version="20.2.0.36" />
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="20.2.0.36" />
+    <PackageReference Include="Syncfusion.Xamarin.SfTreeView" Version="20.2.0.36" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\DocumentsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PdfViewerPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
