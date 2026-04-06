@@ -1,37 +1,61 @@
 # Load and View PDF files from SharePoint in Xamarin
 
-This repository contains the example which demonstrates how to access PDF files from the SharePoint and load them using Syncfusion&reg; Xamarin.Forms PDF Viewer. The sample focuses on accessing a PDF file from SharePoint, loading it as a stream, and displaying it within a mobile application. It is intended to show the core workflow required to integrate SharePoint-hosted PDF documents into a Xamarin.Forms app.
+This repository contains an example that demonstrates how to access PDF files from SharePoint and load them using the Syncfusion® Xamarin.Forms PDF Viewer. The sample focuses on retrieving a PDF file from SharePoint, loading it as a stream, and displaying it within a Xamarin.Forms application.
 
-### What This Repository Demonstrates
+The purpose of this repository is to illustrate the core workflow required to integrate SharePoint-hosted PDF documents into a Xamarin.Forms project.
 
-Accessing a PDF document stored in SharePoint
-Retrieving the PDF content as a stream
-Displaying the PDF using Syncfusion Xamarin.Forms PDF Viewer
-Loading PDF content directly from memory without saving it locally
-Viewing SharePoint PDFs on Android and iOS using shared Xamarin code
+## Overview
 
-This repository is designed as a reference example and keeps the implementation limited to the essential functionality required for viewing PDFs.
+This sample demonstrates a focused approach for viewing PDF documents stored in SharePoint. Instead of downloading and saving files locally, the PDF content is retrieved as a stream and rendered directly using the Xamarin PDF Viewer.
 
-### Scope of the Sample
+This approach minimizes storage dependencies while enabling secure access to SharePoint-hosted documents.
+
+## Supported Platforms
+
+This sample supports the following platforms:
+
+- Android  
+- iOS  
+- UWP (Universal Windows Platform)
+
+The PDF loading and viewing behavior remains consistent across all supported platforms using shared Xamarin.Forms logic.
+
+## What This Repository Demonstrates
+
+The sample highlights the following capabilities:
+
+- Accessing a PDF document stored in SharePoint  
+- Retrieving PDF content as a stream  
+- Loading and displaying PDFs using Syncfusion Xamarin.Forms PDF Viewer  
+- Rendering PDF content directly from memory without local file storage  
+
+This repository is designed as a reference implementation and intentionally focuses only on essential functionality.
+
+## Scope of the Sample
+
 The sample demonstrates a single, focused scenario:
 
-Viewing a predefined PDF file stored in SharePoint inside a Xamarin.Forms application
+- Viewing a predefined PDF file stored in SharePoint within a Xamarin.Forms project  
 
-To keep the example clear and minimal, the following are intentionally not included:
+To keep the example simple and easy to understand, the following features are not included:
 
-File or library browsing
-Upload or modification of documents
-Offline storage or caching
-Advanced PDF features such as annotations
-Full authentication flows for all SharePoint environments
+- File or library browsing  
+- Uploading or modifying documents  
+- Offline storage or caching  
+- Advanced PDF features such as annotations  
+- Complete authentication flows for all SharePoint environments  
 
+## How the Sample Works
 
-### How the Sample Works
+The workflow followed in the sample is:
 
-The application requests a PDF file from SharePoint.
-The PDF is downloaded as a stream.
-The stream is passed directly to the Syncfusion PDF Viewer.
-The PDF is rendered inside the application interface.
+- A request is made to SharePoint for a PDF file  
+- The PDF content is downloaded as a stream  
+- The stream is passed directly to the Syncfusion PDF Viewer  
+- The PDF document is rendered within the viewer interface  
 
 ## Conclusion
-This repository demonstrates a minimal and focused approach to loading and viewing PDF files from SharePoint in a Xamarin.Forms application using Syncfusion Xamarin.Forms PDF Viewer. It shows how a SharePoint-hosted PDF can be retrieved as a stream and rendered directly in the app, making it a useful reference for integrating SharePoint document viewing into mobile solutions.
+
+This repository demonstrates a minimal and effective approach to loading and viewing PDF files from SharePoint using the Syncfusion Xamarin.Forms PDF Viewer. It provides a clear reference for retrieving SharePoint-hosted PDFs as streams and rendering them directly within a Xamarin.Forms solution.
+
+For more details, refer to the official Syncfusion [documentation](https://help.syncfusion.com/document-processing/pdf/pdf-viewer/xamarin/overview) and [API reference](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.html).
